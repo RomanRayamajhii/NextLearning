@@ -1,6 +1,7 @@
 import React from 'react'
 
-const page = () => {
+const page = async() => {
+        await new Promise((resolve) => setTimeout(resolve, 2000));
   return (
      <div className="p-4 bg-gray-100 min-h-screen">
             <h1 className='text-3xl font-bold text-green-700 text-center p-4'> This is product page</h1>
@@ -19,3 +20,6 @@ const page = () => {
 }
 
 export default page
+
+
+
